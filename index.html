@@ -12,82 +12,130 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                baseColor: 'rgba(13, 110, 253, 0.05)',
-                btnColor:'#0D6EFD',
-                textColor:'#706F6F',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              baseColor: "rgba(13, 110, 253, 0.05)",
+              btnColor: "#0D6EFD",
+              textColor: "#706F6F",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="mx-auto">
-    <header class=" bg-baseColor">
-        <div class="navbar container mx-auto">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                
-              </div>
-              <a class="btn btn-ghost normal-case text-2xl font-bold">Hot Gadgets</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-             
-            </div>
-            <div class="navbar-end">
-                <button class="btn bg-btnColor text-white rounded-lg">Sign Up</button>
-            </div>
+    <header class="bg-baseColor">
+      <div class="navbar container mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
           </div>
-          <div class="w-2/3 mx-auto text-center space-y-5  pb-72">
-            <h1 class="text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
-            <p class=" text-textColor">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
-            <button class="btn bg-btnColor text-white rounded-lg">Buy Now</button>
+          <a class="btn btn-ghost normal-case text-2xl font-bold"
+            >Hot Gadgets</a
+          >
         </div>
+        <div class="navbar-center hidden lg:flex"></div>
+        <div class="navbar-end">
+          <button class="btn bg-btnColor text-white rounded-lg">Sign Up</button>
+        </div>
+      </div>
+      <div class="w-2/3 mx-auto text-center space-y-5 pb-72">
+        <h1 class="text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
+        <p class="text-textColor">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority <br />
+          have suffered alteration in some form, by injected humou.
+        </p>
+        <button class="btn bg-btnColor text-white rounded-lg">Buy Now</button>
+      </div>
     </header>
     <div class="h-96">
-        <div class="flex items-baseline justify-center ">
-         <div class=" relative bottom-72">
-             <img src="./assets/pngwing1.png" alt="" srcset="">
-         </div>
-         <div class="  relative bottom-64">
-             <img src="./assets/pngwing2.png" alt="" srcset="">
-         </div>
-         <div class="  relative bottom-72">
-             <img src="./assets/pngwing1.png" alt="" srcset="">
-         </div>
+      <div class="flex items-baseline justify-center">
+        <div class="relative bottom-72">
+          <img src="./assets/pngwing1.png" alt="" srcset="" />
         </div>
-     </div>
-    
+        <div class="relative bottom-64">
+          <img src="./assets/pngwing2.png" alt="" srcset="" />
+        </div>
+        <div class="relative bottom-72">
+          <img src="./assets/pngwing1.png" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+
     <main>
-        <div class="w-1/2 mx-auto text-center space-y-10">
-            <p class=" font-bold text-5xl">Search your phone</p>
-                <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                <div class="relative">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                        </svg>
-                    </div>
-                    <input id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Your Phone">
-                    <button onclick="handleSearchData()" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
-                </div>
-            
+      <div class="w-1/2 mx-auto text-center space-y-10">
+        <p class="font-bold text-5xl">Search your phone</p>
+        <label
+          for="default-search"
+          class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+          >Search</label
+        >
+        <div class="relative">
+          <div
+            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+          >
+            <svg
+              class="w-4 h-4 text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+          </div>
+          <input
+            id="default-search"
+            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Search Your Phone"
+          />
+          <button
+            onclick="handleSearchData()"
+            class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Search
+          </button>
         </div>
+      </div>
 
-        <div id="spiner-box" class=" text-center my-5 hidden">
-            <span class="loading loading-dots loading-lg"></span>
-        </div>
+      <div id="spiner-box" class="text-center my-5 hidden">
+        <span class="loading loading-dots loading-lg"></span>
+      </div>
 
-        <div id="phone-container" class="w-11/12 mx-auto my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5">
-            <!-- <div class="card bg-base-100 shadow-xl border">
+      <div
+        id="phone-container"
+        class="w-11/12 mx-auto my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5"
+      >
+        <!-- <div class="card bg-base-100 shadow-xl border">
                 <figure class="px-5 pt-5">
                   <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -99,11 +147,32 @@
                   </div>
                 </div>
               </div> -->
-            </div>
-        <div id="showall-container" class="w-1/2 mx-auto text-center py-5 hidden">
-            <button onclick="handleShowAll()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Show All</button>
-        </div>
+      </div>
+      <div id="showall-container" class="w-1/2 mx-auto text-center py-5 hidden">
+        <button
+          onclick="handleShowAll()"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Show All
+        </button>
+      </div>
     </main>
+    <div>
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <form method="dialog" class="modal-box">
+          <div id="detailsShowData" class="py-3">
+
+          </div>
+          <h3 id="show-detailsHead" class="font-bold text-lg">Hello!</h3>
+          
+          <div class="modal-action">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </div>
+        </form>
+      </dialog>
+    </div>
     <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </body>
